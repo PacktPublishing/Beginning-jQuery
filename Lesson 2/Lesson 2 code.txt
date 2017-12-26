@@ -69,6 +69,17 @@ $(() => {
     .addClass('horizontal');
 });
 
+
+***Styling List-item Levels - select all sub-level items using a negation pseudo-class***
+
+$(() => {
+  $('#selected-plays > li')
+    .addClass('horizontal'); 
+  $('#selected-plays li:not(.horizontal)')
+    .addClass('sub-level');
+});
+
+
 ***Styling List-item Levels - add the sub-level class***
 
 .sub-level { 
